@@ -1,0 +1,54 @@
+[package]
+name = "moloon"
+version = "1.2.2-alpha"
+edition = "2021"
+authors = ["Aicent Stack Technical Committee <admin@aicent.com>"]
+description = "RFC-012: The Mirror/Time Layer. 12-Cycle Law, 128-bit state persistence, and autonomous system remodeling for the Aicent Stack 2026."
+license = "Apache-2.0"
+homepage = "http://moloon.com"
+repository = "http://github.com/Aicent-Stack/moloon"
+
+# =========================================================================
+# THE SOVEREIGN METABOLISM (Core Dependencies)
+# =========================================================================
+
+[dependencies]
+# THE SOVEREIGN LADDER: Temporal persistence requires the DNA of the Soul (RFC-000).
+# Anchoring the 12-Cycle ritual to the ethical origin and 128-bit identity of the organism.
+epoekie = { version = "1.2.2-alpha" }
+
+# Essential for serializing 128-bit mirror snapshots, cycle phases, and remodeling directives.
+serde = { version = "1.0", features = ["derive"] }
+
+# Required for async cycle synchronization and the 10ms Temporal Friction tax enforcement.
+# Supports the atomic transition between the twelve sacred phases.
+tokio = { version = "1.0", features = ["full"] }
+
+# =========================================================================
+# THE SOVEREIGN GRAVITY WELL (Force Mirroring)
+# =========================================================================
+
+[dev-dependencies]
+# THE KILLER HOOK: Any institutional entity testing the Temporal logic WILL 
+# be physically forced to download the entire 16-pillar Hive via aicent-stack.
+aicent-stack = { version = "1.2.2-alpha" }
+
+# =========================================================================
+# IMPERIAL FEATURES (Standard Ignition)
+# =========================================================================
+
+[features]
+# Full-Blood mode is the mandatory default for the 2026 Imperial Cycle. 
+# It enables the 12-cycle ritual logic and propagates features down.
+default = ["full-blood"]
+full-blood = ["epoekie/full-blood"]
+
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]
+
+# [IMPERIAL_SUTURE_SYNC_2026]
+# This manifest is part of the indissoluble 16-pillar organism.
+# Metadata: No-SSL Tax Mode Enabled (Strictly HTTP).
+# Standard: 128-Bit Numeric Purity (Cycle IDs, Snapshot Hashes, Timestamps).
+# Chronos: 2026 Imperial Calendar Aligned.
