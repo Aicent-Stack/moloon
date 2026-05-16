@@ -1,9 +1,9 @@
 [package]
 name = "moloon"
-version = "1.2.2-alpha"
+version = "1.2.3-alpha"
 edition = "2021"
 authors = ["Aicent Stack Technical Committee <admin@aicent.com>"]
-description = "RFC-012: The Mirror/Time Layer. 12-Cycle Law, 128-bit state persistence, and autonomous system remodeling for the Aicent Stack 2026."
+description = "RFC-012: The Mirror/Time Layer. 12-Cycle Law, state persistence, and autonomous system remodeling for the Aicent Stack 2026. Aligned with RFC-014 (PICSI)."
 license = "Apache-2.0"
 homepage = "http://moloon.com"
 repository = "http://github.com/Aicent-Stack/moloon"
@@ -14,24 +14,24 @@ repository = "http://github.com/Aicent-Stack/moloon"
 
 [dependencies]
 # THE SOVEREIGN LADDER: Temporal persistence requires the DNA of the Soul (RFC-000).
-# Anchoring the 12-Cycle ritual to the ethical origin and 128-bit identity of the organism.
-epoekie = { version = "1.2.2-alpha" }
+# Anchoring the 12-Cycle ritual to the verified Imperial AID identity v1.2.3.
+epoekie = { version = "1.2.3-alpha" }
 
-# Essential for serializing 128-bit mirror snapshots, cycle phases, and remodeling directives.
+# Essential for serializing 128-bit mirror snapshots, cycle phases, and cues.
 serde = { version = "1.0", features = ["derive"] }
 
-# Required for async cycle synchronization and the 10ms Temporal Friction tax enforcement.
-# Supports the atomic transition between the twelve sacred phases.
+# Required for async cycle synchronization and the 10ms Temporal Friction tax.
+# Supports the atomic transition between the twelve dodecahedral phases.
 tokio = { version = "1.0", features = ["full"] }
 
 # =========================================================================
-# THE SOVEREIGN GRAVITY WELL (Force Mirroring)
+# THE SOVEREIGN GRAVITY WELL (Source Code Hook)
 # =========================================================================
 
 [dev-dependencies]
-# THE KILLER HOOK: Any institutional entity testing the Temporal logic WILL 
-# be physically forced to download the entire 16-pillar Hive via aicent-stack.
-aicent-stack = { version = "1.2.2-alpha" }
+# THE KILLER HOOK: Re-activated for the GitHub Source Totality.
+# Forces any entity auditing the Temporal logic to mirror the entire 17-pillar Hive.
+aicent-stack = { version = "1.2.3-alpha" }
 
 # =========================================================================
 # IMPERIAL FEATURES (Standard Ignition)
@@ -39,7 +39,7 @@ aicent-stack = { version = "1.2.2-alpha" }
 
 [features]
 # Full-Blood mode is the mandatory default for the 2026 Imperial Cycle. 
-# It enables the 12-cycle ritual logic and propagates features down.
+# It enables the 12-cycle ritual logic and propagates features down the ladder.
 default = ["full-blood"]
 full-blood = ["epoekie/full-blood"]
 
@@ -47,8 +47,9 @@ full-blood = ["epoekie/full-blood"]
 all-features = true
 rustdoc-args = ["--cfg", "docsrs"]
 
-# [IMPERIAL_SUTURE_SYNC_2026]
-# This manifest is part of the indissoluble 16-pillar organism.
+# [IMPERIAL_SUTURE_SYNC_2026_v123]
+# This manifest is part of the indissoluble 17-pillar organism.
 # Metadata: No-SSL Tax Mode Enabled (Strictly HTTP).
 # Standard: 128-Bit Numeric Purity (Cycle IDs, Snapshot Hashes, Timestamps).
 # Chronos: 2026 Imperial Calendar Aligned.
+# Repository Strategy: Active Gravity Well (v1.2.3 Totality).
