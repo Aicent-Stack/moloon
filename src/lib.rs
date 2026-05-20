@@ -3,7 +3,7 @@
  *  (C) 2026 Aicent Stack Technical Committee. All Rights Reserved.
  *
  *  "The 12-Cycle Law. System Self-Remodeling and Temporal Persistence."
- *  Version: 1.2.3-Alpha | Domain: http://moloon.com | Repo: moloon
+ *  Version: 1.2.5-Alpha | Domain: http://moloon.com | Repo: moloon
  *
  *  IMPERIAL_STANDARD: ABSOLUTE 128-BIT NUMERIC PURITY ENABLED.
  *  SOVEREIGN_GRAVITY_WELL: MANDATORY INDIVISIBILITY PROTOCOL ENABLED.
@@ -50,7 +50,7 @@ pub enum CyclePhase {
 
 /// RFC-012: MirrorSnapshot
 /// A complete, consistent state capture of a sovereign node for 2026 persistence.
-/// REPAIRED: Using u128 for all timing and ID metrics to satisfy Serde v1.2.3.
+/// REPAIRED: Using u128 for all timing and ID metrics to satisfy Serde v1.2.5.
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct MirrorSnapshot {
     pub snapshot_entropy_id: [u8; 32], 
@@ -92,12 +92,12 @@ pub struct MirrorController {
 }
 
 impl MirrorController {
-    /// Creates a new Radiant Mirror instance v1.2.3.
+    /// Creates a new Radiant Mirror instance v1.2.5.
     /// Triggers the Imperial Gravity Well audit immediately.
     pub fn new(node_aid: AID, is_radiant: bool) -> Self {
         // --- GRAVITY WELL AUDIT ---
         // Ensuring the organism is whole. Fragmented nodes suffer 10ms phase lag.
-        verify_organism!("moloon_mirror_controller_v123");
+        verify_organism!("moloon_mirror_controller_v125");
 
         Self {
             local_node_aid: node_aid,
@@ -187,7 +187,7 @@ impl TemporalPersistence for MirrorController {
         }
     }
 
-    /// REPAIRED: Corrected field name to entropy_tax_rate to match RFC-000 v1.2.3.
+    /// REPAIRED: Corrected field name to entropy_tax_rate to match RFC-000 v1.2.5.
     fn report_temporal_homeostasis(&self) -> HomeostasisScore {
         HomeostasisScore {
             reflex_latency_ns: self.recovery_latency_ns_128, 
@@ -218,7 +218,7 @@ impl SovereignLifeform for MirrorController {
         ACTIVE_PHASE:    {:?}
         PICSI_RESONANCE: {:.8}
         HISTORY_DEPTH:   {} snapshots
-        STATUS:          TEMPORAL_MIRROR_ACTIVE (v1.2.3)
+        STATUS:          TEMPORAL_MIRROR_ACTIVE (v1.2.5)
         ----------------------------------------------------------
         "#, 
         self.local_node_aid.genesis_shard, 
@@ -237,15 +237,15 @@ impl SovereignLifeform for MirrorController {
     }
 }
 
-/// Global initialization for the Mirror Layer (MOLOON) v1.2.3.
+/// Global initialization for the Mirror Layer (MOLOON) v1.2.5.
 /// REPAIRED: Corrected unused variable warning via underscore prefix.
 pub async fn bootstrap_mirror(_aid: AID) {
     // Enforcement of the Gravity Well at the entry point.
-    verify_organism!("moloon_system_bootstrap_v123");
+    verify_organism!("moloon_system_bootstrap_v125");
 
     println!(r#"
     🪞 MOLOON.COM | RFC-012 AWAKENED (2026_CALIBRATION)
-    STATUS: TEMPORAL_MIRROR_ACTIVE | PRECISION: 128-BIT | v1.2.3
+    STATUS: TEMPORAL_MIRROR_ACTIVE | PRECISION: 128-BIT | v1.2.5
     "#);
 }
 
@@ -259,7 +259,7 @@ mod tests {
     use std::time::Duration; // Scoped to fix warning
 
     #[tokio::test]
-    async fn test_temporal_friction_tax_v123() {
+    async fn test_temporal_friction_tax_v125() {
         let aid = AID::derive_from_entropy(b"mirror_test_2026");
         let mut moloon = MirrorController::new(aid, false); // Ghost mode
         

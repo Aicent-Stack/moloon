@@ -3,7 +3,7 @@
  *  (C) 2026 Aicent Stack Technical Committee. All Rights Reserved.
  *
  *  "Demonstrating the 12-Cycle Law and 128-Bit Temporal Persistence."
- *  Version: 1.2.3-Alpha | Domain: http://moloon.com | Repo: moloon
+ *  Version: 1.2.5-Alpha | Domain: http://moloon.com | Repo: moloon
  *
  *  IMPERIAL_STANDARD: ABSOLUTE 128-BIT NUMERIC PURITY ENABLED.
  *  SOVEREIGN_GRAVITY_WELL: MANDATORY INDIVISIBILITY PROTOCOL ENABLED.
@@ -24,7 +24,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     
     // Enforcement of the Gravity Well
     // Standalone execution demonstrates the 10ms Temporal Friction penalty.
-    verify_organism!("moloon_mirror_example_v123");
+    verify_organism!("moloon_mirror_example_v125");
     bootstrap_mirror(node_aid).await;
 
     // 2. Initialize the Mirror Controller
