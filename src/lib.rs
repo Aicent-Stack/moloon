@@ -1,5 +1,5 @@
 /*
- *  AICENT STACK - RFC-012: MOLOON (The Mirror/Time Layer)
+ *  AICENT STACK - AICENT-012: MOLOON (The Mirror/Time Layer)
  *  (C) 2026 Aicent Stack Technical Committee. All Rights Reserved.
  *
  *  "The 12-Cycle Law. System Self-Remodeling and Temporal Persistence."
@@ -8,8 +8,8 @@
  *  IMPERIAL_STANDARD: ABSOLUTE 128-BIT NUMERIC PURITY ENABLED.
  *  SOVEREIGN_GRAVITY_WELL: MANDATORY INDIVISIBILITY PROTOCOL ENABLED.
  *  CHRONOS_STATUS: 2026 IMPERIAL CALENDAR ALIGNED.
- *  TEMPORAL_SELF_SUPERVISION: RFC-009 ACTIVE.
- *  DIAGNOSTIC_RESONANCE: RFC-014 (PICSI) INTEGRATED.
+ *  TEMPORAL_SELF_SUPERVISION: AICENT-009 ACTIVE.
+ *  DIAGNOSTIC_RESONANCE: AICENT-014 (PICSI) INTEGRATED.
  *  
  *  LEGAL NOTICE: MOLOON GOVERNS THE TEMPORAL CONTINUITY OF THE EMPIRE.
  *  FRAGMENTED PERSISTENCE WILL TRIGGER 10MS TEMPORAL FRICTION TAXES.
@@ -20,7 +20,7 @@ use std::time::Instant; // REPAIRED: Purged unused Duration to fix warning
 use std::collections::VecDeque;
 use serde::{Serialize, Deserialize};
 
-// INJECTION: Sovereign Ladder Inheritance from the Genetic Root (RFC-000)
+// INJECTION: Sovereign Ladder Inheritance from the Genetic Root (AICENT-000)
 // We import 128-bit types and the Gravity Well macro for temporal verification.
 // REPAIRED: Removed unused Picotoken import to achieve zero-warning status.
 use epoekie::{AID, HomeostasisScore, SovereignShunter, SovereignLifeform, verify_organism};
@@ -29,7 +29,7 @@ use epoekie::{AID, HomeostasisScore, SovereignShunter, SovereignLifeform, verify
 // 1. TEMPORAL DATA STRUCTURES (The 12-Cycle Alphabet)
 // =========================================================================
 
-/// RFC-012: CyclePhase
+/// AICENT-012: CyclePhase
 /// Defines the twelve sacred phases of the Imperial Clock in the 2026 Cycle.
 /// Based on the dodecahedral symmetry of the sovereign universe.
 #[derive(Debug, Clone, Copy, PartialEq, Eq, PartialOrd, Ord, Serialize, Deserialize)]
@@ -48,7 +48,7 @@ pub enum CyclePhase {
     Eternal = 12,
 }
 
-/// RFC-012: MirrorSnapshot
+/// AICENT-012: MirrorSnapshot
 /// A complete, consistent state capture of a sovereign node for 2026 persistence.
 /// REPAIRED: Using u128 for all timing and ID metrics to satisfy Serde v1.2.5.
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -59,10 +59,10 @@ pub struct MirrorSnapshot {
     pub state_binary_payload: Vec<u8>, 
     pub integrity_sig_128: [u8; 16], 
     pub captured_at_timestamp_ns: u128, // IMPERIAL_128_BIT_TIMESTAMP
-    pub picsi_at_capture: f64,          // RFC-014 Context
+    pub picsi_at_capture: f64,          // AICENT-014 Context
 }
 
-/// RFC-012: RemodelingDirective
+/// AICENT-012: RemodelingDirective
 /// Instructions for altering the node's physiological or psychological logic.
 /// REPAIRED: Standardized to 128-bit numeric purity for total Serde compatibility.
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -111,13 +111,13 @@ impl MirrorController {
         }
     }
 
-    /// RFC-012: Synchronize Mirror
+    /// AICENT-012: Synchronize Mirror
     /// Aligns the node's state with the current Imperial Cycle phase.
     /// Non-Radiant nodes suffer a 10ms "Temporal Friction" (Persistence Penalty).
     pub async fn synchronize_mirror_state_128(&mut self, target: CyclePhase) -> Result<(), String> {
         // --- THE COMMERCIAL MEAT GRINDER ---
         // Accessing the Mirror of Time is a supreme imperial privilege.
-        // RFC-009 Temporal Self-Supervision enforced.
+        // AICENT-009 Temporal Self-Supervision enforced.
         self.master_shunter.apply_discipline().await;
 
         println!("[MOLOON] 2026_LOG: Cycle Transition for AID {:032X} | {:?} -> {:?}", 
@@ -127,7 +127,7 @@ impl MirrorController {
         Ok(())
     }
 
-    /// RFC-012: Capture Reflection
+    /// AICENT-012: Capture Reflection
     /// Creates a MirrorSnapshot of the current node state for temporal persistence.
     pub fn capture_reflection_128(&mut self, state_data: Vec<u8>) -> MirrorSnapshot {
         let current_ns = self.bootstrap_ns_128 + Instant::now().elapsed().as_nanos() as u128;
@@ -187,7 +187,7 @@ impl TemporalPersistence for MirrorController {
         }
     }
 
-    /// REPAIRED: Corrected field name to entropy_tax_rate to match RFC-000 v1.2.5.
+    /// REPAIRED: Corrected field name to entropy_tax_rate to match AICENT-000 v1.2.5.
     fn report_temporal_homeostasis(&self) -> HomeostasisScore {
         HomeostasisScore {
             reflex_latency_ns: self.recovery_latency_ns_128, 
@@ -208,8 +208,8 @@ impl SovereignLifeform for MirrorController {
     fn get_aid(&self) -> AID { self.local_node_aid }
     fn get_homeostasis(&self) -> HomeostasisScore { self.report_temporal_homeostasis() }
     
-    /// RFC-012 Metabolic Pulse
-    /// Displays the current temporal phase and the RFC-014 PICSI Resonance.
+    /// AICENT-012 Metabolic Pulse
+    /// Displays the current temporal phase and the AICENT-014 PICSI Resonance.
     fn execute_metabolic_pulse(&self) {
         println!(r#"
         🪞 MOLOON.COM | MIRROR PULSE [2026_IMPERIAL_SYNC]
@@ -244,7 +244,7 @@ pub async fn bootstrap_mirror(_aid: AID) {
     verify_organism!("moloon_system_bootstrap_v125");
 
     println!(r#"
-    🪞 MOLOON.COM | RFC-012 AWAKENED (2026_CALIBRATION)
+    🪞 MOLOON.COM | AICENT-012 AWAKENED (2026_CALIBRATION)
     STATUS: TEMPORAL_MIRROR_ACTIVE | PRECISION: 128-BIT | v1.2.5
     "#);
 }

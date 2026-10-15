@@ -3,7 +3,7 @@ name = "moloon"
 version = "1.2.5-alpha"
 edition = "2021"
 authors = ["Aicent Stack Technical Committee <admin@aicent.com>"]
-description = "RFC-012: The Mirror/Time Layer. 12-Cycle Law, state persistence, and autonomous system remodeling for the Aicent Stack 2026. Aligned with RFC-014 (PICSI)."
+description = "AICENT-012: The Mirror/Time Layer. 12-Cycle Law, state persistence, and autonomous system remodeling for the Aicent Stack 2026. Aligned with AICENT-014 (PICSI)."
 license = "Apache-2.0"
 homepage = "http://moloon.com"
 repository = "http://github.com/Aicent-Stack/moloon"
@@ -13,7 +13,7 @@ repository = "http://github.com/Aicent-Stack/moloon"
 # =========================================================================
 
 [dependencies]
-# THE SOVEREIGN LADDER: Temporal persistence requires the DNA of the Soul (RFC-000).
+# THE SOVEREIGN LADDER: Temporal persistence requires the DNA of the Soul (AICENT-000).
 # Anchoring the 12-Cycle ritual to the verified Imperial AID identity v1.2.5.
 epoekie = { version = "1.2.5-alpha" }
 

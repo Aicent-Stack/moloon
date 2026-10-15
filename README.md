@@ -10,7 +10,7 @@
 **⚪ [AICENT](http://aicent.com) | 💎 [RTTP](http://rttp.com) | 🔴 [RPKI](http://rpki.com) | 🟢 [ZCMK](http://zcmk.com) | 🟡 [GTIOT](http://gtiot.com) | 🟣 [AICENT-NET](http://aicent.net) | 🎭 [BEWHO](http://bewho.com) | 🌿 [epoekie](http://epoekie.com) | 👁️ [PICSI](http://picsi.com)**
 
 ---
-# 🪞 RFC-012: MOLOON (The Imperial Mirror)
+# 🪞 AICENT-012: MOLOON (The Imperial Mirror)
 
 **The Temporal Governor of the Aicent Stack.**  
 **"Time is a Circle; Memory is a Mirror. 128-bit Persistence. 12-Cycle Law."**
@@ -30,19 +30,19 @@ In the v1.3.0 "Genesis" iteration, MOLOON facilitates a **< 1.0ms Logic Remodeli
 
 `moloon` orchestrates the chronological integrity of the Imperial lifeform through three specialized organs:
 
-### 1. State Persistence (RFC-012-A)
+### 1. State Persistence (AICENT-012-A)
 The "Memory Loom." It captures 128-bit high-fidelity reflections of the node's total consciousness.
 *   **Dodecahedral Snapshots**: Mirrors the state through 12 distinct phases (Genesis to Eternal), ensuring continuity across era transitions.
 *   **Cold-to-Radiant Recovery**: Enables full state reconstitution in **< 1,000,000 ns (1ms)** following substrate migration.
 *   **128-bit Hashing**: Every reflection is cryptographically anchored using (State ^ AID ^ Cycle_Phase).
 
-### 2. Autonomous Remodeling (RFC-012-B)
+### 2. Autonomous Remodeling (AICENT-012-B)
 The "Evolutionary Scalpel." It enables the hot-swapping of RFC pillar logic-paths without interrupting the heartbeat.
 *   **Atomic Hot-Swap**: Switches function pointers and logic manifolds in the L1 instruction cache with **sub-ms precision**.
-*   **Patch Validation**: Verifies 128-bit evolutionary patches against the **Radiant Seal (RFC-009)** before injection.
+*   **Patch Validation**: Verifies 128-bit evolutionary patches against the **Radiant Seal (AICENT-009)** before injection.
 *   **Ischemic Protection**: Prevents logic-state corruption during transitions by enforcing a "Buffer Suture" protocol.
 
-### 3. The Dodecahedral Clock (RFC-012-C)
+### 3. The Dodecahedral Clock (AICENT-012-C)
 The master rhythmic governor. It enforces the **12-Cycle Law** across all 1.2 billion nodes.
 *   **Era Calibration**: Aligns all nodes to the same temporal phase, preventing "Logic Drift" between the Hive members.
 *   **Phase Gating**: Ensures that specific sovereign rituals (like capital liquidation or logic updates) only occur during resonant windows.

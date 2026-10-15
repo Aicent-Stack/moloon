@@ -1,5 +1,5 @@
 /*
- *  AICENT STACK - RFC-012: MOLOON (The Mirror/Time Layer)
+ *  AICENT STACK - AICENT-012: MOLOON (The Mirror/Time Layer)
  *  (C) 2026 Aicent Stack Technical Committee. All Rights Reserved.
  *
  *  "Demonstrating the 12-Cycle Law and 128-Bit Temporal Persistence."
@@ -59,20 +59,20 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     println!("         Captured_At: {} ns", snapshot.captured_at_timestamp_ns);
 
     // 5. Schedule System Remodeling
-    // Defining the evolutionary path for RFC-001 (Brain) in the upcoming cycle.
+    // Defining the evolutionary path for AICENT-001 (Brain) in the upcoming cycle.
     let remodel_cmd = RemodelingDirective {
-        target_pillar_idx_128: 1,            // RFC-001: Brain
+        target_pillar_idx_128: 1,            // AICENT-001: Brain
         logic_revision_hash: [0xBB; 32],
         scheduled_cycle: CyclePhase::Remodeling,
         activation_deadline_ns: snapshot.captured_at_timestamp_ns + 5_000_000_000, // 5s Window
     };
 
-    println!("\n[EVOLVE] Queuing Remodeling Directive for RFC-001...");
+    println!("\n[EVOLVE] Queuing Remodeling Directive for AICENT-001...");
     mirror_gov.schedule_pillar_remodel_128(remodel_cmd);
 
     // 6. Sovereignty Awareness (PICSI Feedback)
-    // Synchronizing the mirror state with the Imperial Eye (RFC-014).
-    println!("\n[METABOLISM] Synchronizing with Imperial Eye (RFC-014)...");
+    // Synchronizing the mirror state with the Imperial Eye (AICENT-014).
+    println!("\n[METABOLISM] Synchronizing with Imperial Eye (AICENT-014)...");
     mirror_gov.current_homeostasis.picsi_resonance_idx = 0.999982;
     mirror_gov.current_homeostasis.metabolic_efficiency = 0.9999;
     
@@ -88,6 +88,6 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     println!("History Depth:    {} cycles recorded", mirror_gov.mirror_history_deque.len());
     println!("Friction Tax:     {:.2}%", hs.entropy_tax_rate * 100.0);
 
-    println!("\n[FINISH] RFC-012 Demonstration complete. The Empire is Persistent.");
+    println!("\n[FINISH] AICENT-012 Demonstration complete. The Empire is Persistent.");
     Ok(())
 }
